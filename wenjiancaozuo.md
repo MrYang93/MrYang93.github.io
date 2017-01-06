@@ -8,7 +8,7 @@ title: 文件操作
 
 文件创建：atom/touch
 文件夹创建： mkdir
-文件夹删除：rm -r folder
+文件夹删除：rm -r folderName 时保护文件的话就用 rm -r -f folderName
 文件移动： mv file ../
 文件删除： rm file
 创建文件或者文件夹

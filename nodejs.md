@@ -34,6 +34,7 @@ npm install <package name>插件名 --save-dev 安装的包会记录到 package.
 npm install <package name>插件名 -g 是全局安装，固定的安装到一个根目录下，此时不论我们在哪里都可以用。
 
 ### 用npm装插件：
+```
 在终端中输入 ： npm install 插件名
 卸载插件包：
 在终端中输入： npm uninstall 插件名
@@ -43,5 +44,6 @@ npm install <package name>插件名 -g 是全局安装，固定的安装到一�
     "jquery": "^3.1.1",
     "lodash": "^4.17.4"
   }
+  ```
   此时 我们上传就不用把所有插件包都上传了，其他人下载我们的项目时只需要
 npm install 就可以把属性中的所有包都自动下载下来了。
