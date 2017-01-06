@@ -5,7 +5,7 @@ title: 安装nodejs
 
 
 ###  nodejs 安装
-```
+
 安装 node 的方式很多，这里推荐用 nvm 装 node。
 
 安装 nvm 可以直接到 github 上找到 nvm 这个仓库查看安装命令
@@ -26,15 +26,14 @@ npm -v
 nvm alias default 版本号
 设置当前用的版本号
 
-如何使用 npm 初始化一个 node 项目：
+### 如何使用 npm 初始化一个 node 项目：
 npm init 生成package.json
 npm install <package name>插件名@版本号  这样可以自定义版本，否则会默认最新版.
 npm install <package name>插件名 --save 安装的包会记录到 package.json 的dependencies中
 npm install <package name>插件名 --save-dev 安装的包会记录到 package.json 的 dvedependencies中 这里正常放工具类的
 npm install <package name>插件名 -g 是全局安装，固定的安装到一个根目录下，此时不论我们在哪里都可以用。
 
-
-用npm装插件：
+### 用npm装插件：
 在终端中输入 ： npm install 插件名
 卸载插件包：
 在终端中输入： npm uninstall 插件名
@@ -46,4 +45,3 @@ npm install <package name>插件名 -g 是全局安装，固定的安装到一�
   }
   此时 我们上传就不用把所有插件包都上传了，其他人下载我们的项目时只需要
 npm install 就可以把属性中的所有包都自动下载下来了。
-```
