@@ -8,17 +8,17 @@ title: 上传代码到 Github.com
 
 准备工作：删除第一天创建的项目
 
-如何删除一个 github.com 的仓库呢？
+### 如何删除一个 github.com 的仓库呢？
 
 首先到仓库页面：https://github.com/funnydeer/funnydeer.github.io
 
 点 Settings（设置）这一个标签。打开的页面底部有一个 “Delete this repository” 按钮，意思是”删除这个仓库“，点击按钮。打开的界面中，输入一下这个仓库的名字 funnydeer.github.io 就可以把这个仓库删除了。
 
-删除仓库之后，我们要做的事情是：
+### 删除仓库之后，我们要做的事情是：
 
 如何把本地的已有仓库，上传到 github.com
 
-第一步：创建本地项目
+_第一步：创建本地项目_
 
 项目名称是任意的，但是我们这里想做的事情是上传比较，所以，本地这个仓库名，也必须是：
 
@@ -29,11 +29,11 @@ mkdir funnydeer.github.io
 
 拷贝进来的内容，要符合第一天我们介绍的 github pages 的格式规范（其实最重要的一点就是每个 .md 文件中都要有头部，参考第一天我们的文档中的介绍）。
 
-第二步：创建 github.com 上的同名仓库
+_第二步：创建 github.com 上的同名仓库_
 
 待续…
 
-添加 ssh key
+### 添加 ssh key
 
 为了达成开发机和 github.com 的互信。因为开发过程中，我们需要用本地机器向 github.com 的仓库中 写东西（ git push ），同时我们又不想每次都输入密码，所以我们就用 ssh key 的形式来达成互信，过程 如下：
 
@@ -65,10 +65,10 @@ git clone git@github.com:happypeter/digicity.git
 clone 的特点就是不仅仅可以得到最新代码，而且可以得到整个改版历史。而普通下载只能得到最新版本。
 
 ### git 各个命令的作用
-
-git push 把本地仓库中有，而远端对应仓库中没有的版本推送到远端
-git pull 把远端仓库中有，而本地对应仓库中没有的版本拉到本地
-git clone 把远端仓库，克隆到本地
+- git branch 查询分支
+- git push 把本地仓库中有，而远端对应仓库中没有的版本推送到远端
+- git pull 把远端仓库中有，而本地对应仓库中没有的版本拉到本地
+- git clone 把远端仓库，克隆到本地
 学习 Github/Git 的学习目标
 
 #### 知道 git 是版本控制工具
