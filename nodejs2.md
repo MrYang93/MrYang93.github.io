@@ -6,8 +6,9 @@ title: notejs第二节
 在一个js中我们可以导出需要用到的js代码
 
 例如 x.js 中的代码  a  我想用到  y.js 中，那么我就需要从x.js中吧 a 导出来。
-```
-格式：在x.js中写 module.exports = a；
+
+###格式：
+     在x.js中写 module.exports = a；
      也可以写成module.exports.a = a;相当于module.exports = {
        a:a;
      }
@@ -24,7 +25,6 @@ title: notejs第二节
        b:b,
        c:c
     }；
-    ```
 ### 模块分类
 - 第一类模块module，核心模块；
   用法 var fs =require('fs')
