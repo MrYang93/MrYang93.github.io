@@ -31,7 +31,9 @@ li {
   border-right: 1px solid #dddddd;
   border-bottom: 1px solid #dddddd;
 }
-li:hover{color: #b7c7c4}
+li:hover{
+  background-color: #b7c7c4
+}
 a {
   text-decoration: none;
   color: #243d4c
