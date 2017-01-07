@@ -120,6 +120,7 @@ title: 我的这篇文章的标题
 具体操作步骤
 
 到 happypeter.github.io 的项目仓库中，首先在 index.html 中添加如下内容：
+
 ```
 <ul>
   <li>
@@ -130,15 +131,18 @@ title: 我的这篇文章的标题
   </li>
 </ul>
 ```
+
 然后，就到 https://github.com/happypeter/happypeter.github.io 仓库首页，找到 Create New File 按钮，创建一个新文件，叫做
 
 1-first.md
 里面添加这些内容：
+
 ```
 ---
 title: 我的第一篇文章
 ---
 ```
+
 ### 第一篇第一个大标题
 上面:后面留一个空格，头部下方留出一个空行，然后再写 markdown 正文
 
