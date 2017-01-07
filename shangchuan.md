@@ -50,12 +50,19 @@ _第二步：创建 github.com 上的同名仓库_
 ...make sure ... correct access right ...
 大功告成。
 
+### 地址：
+
+  地址储存位置是在 .git/config
+  命令行输入 cat .git/cofig可以查看
+  修改 atom .git/config
+  
 ### 在coding  上时
 git branch 查看有几个分支
 git checkout -b coding-pages  创建一个新分支 叫 coding-pages
 git push -u origin coding-pages  远程创建一个分之叫coding-pages 并上传文件到分支（这个操作每个分支只需要操作一边）。
 当我在想修改分支内容的时候，只需要在本地项目中修改，然后在执行 git push -u origin coding-pages就OK了。
 
+github  上传添加时 git push -u origin master
 
 ### git clone 命令
 
