@@ -18,7 +18,7 @@ title: 上传代码到 Github.com
 
 如何把本地的已有仓库，上传到 github.com
 
-_第一步：创建本地项目_
+#### _第一步：创建本地项目_
 
 项目名称是任意的，但是我们这里想做的事情是上传比较，所以，本地这个仓库名，也必须是：
 
@@ -29,9 +29,42 @@ mkdir funnydeer.github.io
 
 拷贝进来的内容，要符合第一天我们介绍的 github pages 的格式规范（其实最重要的一点就是每个 .md 文件中都要有头部，参考第一天我们的文档中的介绍）。
 
-_第二步：创建 github.com 上的同名仓库_
+#### _第二步：创建 github.com 上的同名仓库_
 
-待续…
+到 github.com 上点 New repository 按钮，新建一个项目， 项目名叫做 happypeter.github.io 。
+
+#### 注意，不要勾选任何选项，尤其是不能默认创建 README.md 文件。
+
+创建完成之后，页面上有两个选择，其中第二个是
+
+or push an existing repository from the command line
+翻译：或者把一个已经存在的仓库从命令行推送上来
+
+我们当前就属于这个情况。上传方式有两种 HTTPS 和 SSH ，我们推荐的方式是 SSH，点一下页面上 SSH 字样的按钮。
+
+接下来就按照页面上显示的两步来走。
+
+#### 尝试推送 push
+
+到本地命令行，进入我们的本地项目文件夹
+
+cd happypeter.github.io
+
+然后执行下面两步：
+
+git remote add origin git@github.com:funnydeer/funnydeer.github.io.git
+git push -u origin master
+如上所示：
+
+git@github.com:funnydeer/funnydeer.github.io.git
+这个是远端仓库地址。第一个命令本身的意思是把远端仓库地址记录到本地仓库中。
+
+下一步 git push -u origin master 就是真正进行上传代码的工作了。
+
+#### 但是执行结果是：
+
+Please make sure you have the correct access rights
+执行失败，解决方法就是添加 ssh 公钥到 github.com 。
 
 ### 添加 ssh key
 
