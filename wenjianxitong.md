@@ -1,5 +1,6 @@
 ---
 title: 文件系统结构
+layout: editor
 ---
 
 文件系统结构

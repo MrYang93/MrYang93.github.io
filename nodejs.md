@@ -1,5 +1,6 @@
 ---
 title: 安装nodejs
+layout: editor
 ---
 
 

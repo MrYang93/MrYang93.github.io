@@ -1,5 +1,6 @@
 ---
 title: 上传代码到 Github.com
+layout: editor
 ---
 
 # 上传代码到 Github.com
@@ -95,7 +96,39 @@ git checkout -b coding-pages  创建一个新分支 叫 coding-pages
 git push -u origin coding-pages  远程创建一个分之叫coding-pages 并上传文件到分支（这个操作每个分支只需要操作一边）。
 当我在想修改分支内容的时候，只需要在本地项目中修改，然后在执行 git push -u origin coding-pages就OK了。
 
-github  上传添加时 git push -u origin master
+github  上传添加时 git push -u origin master之后在上传改动直接git push
+
+### Jekyll 框架
+
+要把 Github Pages 的网站做漂亮，必须了解 **Jekyll** 框架如何运行的。
+
+首先，.md 文件，也就是 markdown 格式的支持，就是 Jekyll 提供给我们的。这个前面已经详细介绍过了。
+
+现在，我们来添加布局文件
+
+英文参考文档：[官网](https://jekyllrb.com/docs/frontmatter/)
+中文参考文档（有可能过期）： [中文网](http://jekyll.com.cn/docs/frontmatter/)
+
+#### Jekyll: 添加布局文件
+
+首先打开所有的 .md 中的头部改成这样
+```
+---
+title: First Page
+layout: default
+---
+```
+然后来创建布局文件 default.html ，这个文件必须存放到项目下（自己创建） `_layouts` 文件夹之内，
+
+`_layouts/default.html`  内容如下，可以参考我的其他项目中的写法。例如：
+
+```
+anything anything(任意字符)
+  content
+anything anything(任意字符)
+```
+
+注意，上面的 content 外面要套两个大括号。
 
 ### git clone 命令
 

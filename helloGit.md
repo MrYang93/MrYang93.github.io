@@ -1,5 +1,6 @@
 ---
 title: 你好 Git
+layout: editor
 ---
 
 你好 Git

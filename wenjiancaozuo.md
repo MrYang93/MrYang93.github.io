@@ -1,5 +1,6 @@
 ---
 title: 文件操作
+layout: editor
 ---
 
 文件操作

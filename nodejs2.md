@@ -1,5 +1,6 @@
 ---
 title: notejs第二节
+layout: editor
 ---
 
 ### 用note 导出js

@@ -1,5 +1,6 @@
 ---
 title: webpack的安装使用
+layout: editor
 ---
 
 ### 安装 webpack

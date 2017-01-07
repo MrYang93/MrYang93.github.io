@@ -1,5 +1,6 @@
 ---
 title: Git 本地工作流
+layout: editor
 ---
 
 # Git 本地工作流
