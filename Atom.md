@@ -1,4 +1,5 @@
 ---
+layout: editor
 title: Atom 编辑器
 ---
 
