@@ -34,8 +34,7 @@ atom .
 ### 装包
 
 使用 Ctrl-Shift-P 打开命令面板，然后搜索
-
-install packages
+  install packages
 可以搜到 Install Packages And Themes ，选中，回车，就进入了装包界面。
 
 搜索报名，例如 pigments ，搜到之后，点 install 就可以了。
