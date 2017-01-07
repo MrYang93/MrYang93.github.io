@@ -10,12 +10,13 @@
   width: 800px;
   margin: 0 auto;
   background-color: #fff;
+  padding-bottom: 40px;
 }
 h1 {
   font-size: 36px;
   line-height: 70px;
   text-align: center;
-  color: #00ffad;
+  color: #e09f27;
 }
 ul {
   list-style: none;
