@@ -30,10 +30,11 @@ li {
   border-left: 1px solid #dddddd;
   border-right: 1px solid #dddddd;
   border-bottom: 1px solid #dddddd;
-
 }
+li:hover{color: #b7c7c4}
 a {
   text-decoration: none;
+  color: #243d4c
 }
 ul li:nth-child(1){
   border-top: 1px solid #dddddd;
