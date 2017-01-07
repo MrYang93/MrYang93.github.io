@@ -4,11 +4,11 @@
 }
 .main {
   background-color: #eef3f3;
+  padding-top: 40px;
 }
 .main-inner {
   width: 800px;
   margin: 0 auto;
-  padding-top: 40px;
   background-color: #fff;
 }
 h1 {
