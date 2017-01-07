@@ -50,12 +50,12 @@ _第二步：创建 github.com 上的同名仓库_
 ...make sure ... correct access right ...
 大功告成。
 
-### 地址：
+### 钥匙地址：
 
   地址储存位置是在 .git/config
   命令行输入 cat .git/cofig可以查看
   修改 atom .git/config
-  
+
 ### 在coding  上时
 git branch 查看有几个分支
 git checkout -b coding-pages  创建一个新分支 叫 coding-pages
