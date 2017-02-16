@@ -27,10 +27,12 @@ scripts：{
 }
 然后在项目文件中建一个 webpack.config.js 里面内容写
 module.exports = {
-  entry:'。/写入口文件',
+  entry:'./写入口文件',
   output: {
+    path: '文件夹名'
     filename: '出口文件名'
   }
+  devtool: 'eval'
 }
 ```
 然后在命令行中运行 npm run build（这个只是属性名）;
