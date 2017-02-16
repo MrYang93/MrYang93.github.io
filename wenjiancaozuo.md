@@ -80,6 +80,8 @@ aa bb cc
 sudo rm fileName
 上面的命令可以用超级用户权限来执行一个命令。
 
+sudo apt-get install 插件名 安装插件
+
 sudo su
 可以直接化身超级用户。
 
