@@ -37,3 +37,5 @@ layout: editor
 
 - 第三类模块module,自己写的模块;
   用法 就是上面写的导入导出的用法；
+#### 忽略一些文件不上传
+  在最高目录下创建一个 .gitignore 文件，将想要忽略的文件写到 .gitignore 文件中，例如 index.html 文件，直接将index.html 写入.gitignore 文件中。
