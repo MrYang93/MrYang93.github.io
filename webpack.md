@@ -36,3 +36,24 @@ module.exports = {
 }
 ```
 然后在命令行中运行 npm run build（这个只是属性名）;
+
+配合webpack的一个插件 babelrc 官网 babeljs.io 点击Docs 然后点Setup
+接下来第一步点Webpack ,然后到第二部，执行第二部命令npm install --save-dev babel-loader babel-core，第三部将
+
+```
+module: {
+    rules: [
+      { test: /\.js$/, exclude: /node_modules/, use: "babel-loader" }
+    ]
+  }
+```
+
+放到webpack.config.js 中我们之前写的module.exports = {
+  这些,
+  下面  这里
+}
+最高目录下创建一个文件 .babelrc
+在文件中写入
+{
+  "presets": ["env"]
+}
