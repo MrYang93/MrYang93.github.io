@@ -34,7 +34,9 @@ title: ES 新增
   相当于 function a(x){
     return x+2
   }
-  var s = (name,age) => ({name:name,age:age}) 当我们的参数是多个或者是没有时，必须要用小括号扩起来，上面这种形式主要表达的是 当我们的返回值时一个对象的时候，需要用小括号扩起来({name:name,age:age})
+  var s = (name,age) => ({name:name,age:age}) 当我们的参数是多个或者是没有时，
+  必须要用小括号扩起来，上面这种形式主要表达的是 当我们的返回值时一个对象的时候，需要
+  用小括号扩起来({name:name,age:age})
 
   var j = () => {
     console.log(s);
@@ -60,8 +62,38 @@ function add (x=2,y=4){
   return x+y
 }
 
+将所有参数都相加的函数
+function add(...x){
+  return x.reduce((m,n)=>m+n);
+}
+
+回调函数(传参 传函数)
+function x(a,y){
+  y(b)
+}
+function y(b){
+  console.log(b)
+}
+
+遍历数组返回一个新的数组
+map() 方法返回一个由原数组中的每个元素调用一个指定方法后的返回值组成的新数组。
+let arr = [2,4,6];
+let ybl = arr.map( function (currentValue, idnex,array) {
+  return currentValue+10
+} )
+console.log(ybl)
+[12, 14, 16]
+
+arr.forEach( function (currentValue, idnex,array) {
+  console.log(currentValue, idnex,array)
+} )    高级一点的for循环
+
+arr.forEach( it => console.log(it+10))  输出12 14 16
+
 
 ```
+
+
 
 
 #### 字符串链接的方法
@@ -71,4 +103,23 @@ let age = 12;
 let name = 'ybl';
 console.log(`姓名是${name}的年龄是${age}岁`)
 相当于 console.log('姓名是'+name+'的年龄是'+age+'岁')
+```
+
+#### 函数的一种写法，与参数...有关系
+
+
+```
+
+
+function restFunc(x, ...rest){
+  console,log(x);
+  console,log(rest);
+}
+restFunc(1);
+restFunc(1,2,3,4,)
+ 1
+ [2, 3, 4]
+这里...很明显是代表多个参数，将传入的多个参数传入一个数组中，而rest是名称
+
+
 ```
