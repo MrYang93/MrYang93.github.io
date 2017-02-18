@@ -91,6 +91,13 @@ arr.forEach( function (currentValue, idnex,array) {
 
 arr.forEach( it => console.log(it+10))  输出12 14 16
 
+数组合并，...展开数组
+let arr1 = [1,2,3];
+let arr2 = [5,6,7];
+let arr3 = [...arr1,...arr2];
+console.log(arr3); 输出[1,2,3,5,6,7]
+
+
 
 ```
 
@@ -121,6 +128,110 @@ restFunc(1,2,3,4,)
  1
  [2, 3, 4]
 这里...很明显是代表多个参数，将传入的多个参数传入一个数组中，而rest是名称
+
+
+```
+
+```
+
+
+//继承 构造函数
+// function Point(x,y) {
+//   this.x = x;
+//   this.y = y;
+// }
+//
+// Point.prototype.toString = function (){
+//   return `(${this.x},${this.y})`;
+// };
+
+// function Hello(){
+//   this.toString = function(){
+//     return 'hello say';
+//   }
+// }
+//
+// Hello.prototype = new Point(8,5);
+//
+// var p = new Point(1,2);
+//
+// console.log(p.x);
+// console.log(p.y);
+// console.log(p.toString());
+
+
+//es6类
+class Point {
+  constructor(x,y) {
+// 类的属性必须写在 constructor 方法内 这是一条有意义的名字
+    console.log('我是自动执行的')
+    this.x = x;
+    this.y = y;
+  }
+  //方法和方法之间只能用回车链接，不可以有逗号之类的字符，
+  //想要添加什么属性只能写在方法中  不可以直接写到这里。
+   toString(){
+     return "point toString"
+   }
+}
+
+// var p = new Point(3,5);
+// console.log(p.x,p.y);
+// console.log(p.toString());
+
+//类的继承
+class Hello extends Point {
+  constructor(a,b){
+    //因为Hello是继承自上面的类.如果我想给自己添加属性的话，
+    //就必须加 super()  而且必须要写在最上面，不然还是会出错。
+    super();
+    this.a = a;
+    this.b = b;
+  }
+  say(){
+    return 'hello say'
+  }
+}
+var p = new Hello();
+console.log(p.toString());
+
+
+//运用继承类 来实现一个js添加html
+class Father {
+  render(){
+    throw new Error('子类必须实现')//报错提醒子类需要有这个方法
+  }
+  _render(){
+    return(`
+      <ul>
+        ${this.render()}
+      </ul>
+      `)
+  }
+}
+
+class Son extends Father {
+  render(){
+    return(`
+      <li>123445</li>
+      `)
+  }
+}
+document.getElementById('app').innerHTML =new Son()._render();
+
+//导出
+let a = 1;
+let b = 2;
+function aa(){
+
+}
+// 命名导出，暴露出来 ，其他文件可以用
+export {a,b,aa}
+//导入 是在其他文件 inport {a,b} from './babel';  直接用。
+
+//默认导出
+export default a;//默认导出  只能导出一个
+//导入，import 随意命名 from './babel'  //导入的时候肯定能得到导出的哪一东西，所以导入的时候，就可以随意命名，但缺点是只能导一个。
 
 
 ```
