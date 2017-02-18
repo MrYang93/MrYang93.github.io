@@ -230,8 +230,96 @@ export {a,b,aa}
 //导入 是在其他文件 inport {a,b} from './babel';  直接用。
 
 //默认导出
-export default a;//默认导出  只能导出一个
-//导入，import 随意命名 from './babel'  //导入的时候肯定能得到导出的哪一东西，所以导入的时候，就可以随意命名，但缺点是只能导一个。
+export default a;//默认导出  只能导出一个 ，想导多个的话直接用大括号包起来，相当于导出一个对象。
+//导入，import 随意命名 from './babel'  //导入的时候肯定能得到导出的哪一东西，所以导入的时候，就可以随意命名
 
+
+```
+
+
+```
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <div id = "app"></div>
+  <script src = "../build/bundle.js"></script>
+</body>
+</html>
+
+#### js中先引入
+import React from 'react';
+import  ReactDOM from 'react-dom';
+
+let name = 'ybl';
+let age = 24;
+let male = 0;
+let obg = {name:'aaaa'}
+function add(){
+  return 5+6
+}
+
+let a = <div>
+  <h1>hahaha</h1>
+  {/*我是注释*/}
+  <h1>{name+'hhh'}</h1>
+  <h1></h1>
+  <h1 className = "aaa">性别：{male ? '男' : '女'}年龄：{age*3}</h1>
+  <h1>{obg.name}</h1>
+  <h1>{add()}</h1>
+  <br />
+</div>
+ReactDOM.render(
+  a,document.getElementById('app') 看上面的html有个div的id是app
+)
+
+// JSX 语法 ，允许我们在js里直接写标签。
+/* 其他特点
+1.每个标签必须要有封口，有头有尾，例如 <h1></h1>
+如果是单标签  <br>  或者是 <img src="" alt="">，那么就需要自闭，
+<br /> <img src="" alt="" />     >尖括号后面加/
+2.JSX 元素必须包裹在一个标签之内。例如上面吧div标签去掉 那么就会报错
+Adjacent JSX elements must be wrapped in an enclosing tag 因为br标签和h1标签是两个*/
+//3.注释写法 {/*我是注释*/}
+/*
+4.我们可以在jsx元素内嵌入变量{obj}，里面可以和字符串拼接，可以运算，还可以用三木运算，
+还可以时对象.属性，还可以是函数
+
+5.加class的时候要写成className="",而且 还可以写成 className = {} {}内写变量
+tabindex 写为 tabIndex， for 写为htmlFor
+
+6.jsx语法会被编译，通过React.createElement()这个方法
+
+创建组件component (3种方式) 首字母要大写,可以理解为自定义标签，可以包含一系列标签
+1.var Greeting = React.createClass({}) es5写法
+// let Dom = React.createClass({
+//   render:function () {
+//     return （
+//        <h1>Hello</h1>
+//   )}
+// })
+//
+// ReactDOM.render(
+// <Dom />,document.getElementById('app')
+// //或者<Dom></Dom>,document.getElementById('app')
+// )
+2.function Greeting(){
+      return <h1>hh</h1>
+    }使用时<Greeting></Greeting>
+    ReactDOM.render(
+    <Greeting></Greeting>,document.gitElementById('app')
+  )
+
+
+
+*/
 
 ```

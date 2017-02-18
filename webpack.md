@@ -57,3 +57,32 @@ module: {
 {
   "presets": ["env"]
 }
+
+#### React
+
+
+```
+
+安装React，
+ 必用的下载时 --save
+"dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  工具包 下载时 --save-dev 或者-D
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-env": "^1.1.8",
+    "babel-preset-react": "^6.23.0",
+    "webpack": "^2.2.1"
+  },
+在.babelrc文件中写入
+{
+  "presets": ["env","react"]
+}
+
+
+```
+
+完成以上任务，就可以在入口js文件中瞎写了。
