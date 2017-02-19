@@ -1,6 +1,6 @@
 ---
 layout: ES
-title: ES 新增
+title: ES和React
 ---
 
 
@@ -317,6 +317,57 @@ tabindex 写为 tabIndex， for 写为htmlFor
     ReactDOM.render(
     <Greeting></Greeting>,document.gitElementById('app')
   )
+
+  3.es6 class 方法
+  class Hello extends React.Component {
+    render(){                      //必须要有的方法
+      return(
+        <div>
+          <h1> hello </h1>
+        </div>
+      )
+    }
+  }
+
+  ReactDOM.render(
+  <Hello />,document.getElementById('app')
+  )
+
+
+  jsx 行内样式
+  在标签内写 style = {{width:'100px'}}
+  或者是在render内变量 let style = {width:'100px',borderRadius:'50%'}  <div style = {style}> </div>
+  或者在render 外 一个方法
+  class Signin extends React.Component{
+    getStyle(){
+      return {
+        border: '3px solid #000',
+        marginLeft : '100px'
+      }
+    }
+    render(){
+      return(
+        <div>
+          <button style = {this.getStyle()}>登陆</button>
+          <button>注册</button>
+        </div>
+      )
+    }
+  }
+
+  外部样式
+  写外部样式引进来的话，需要装两个包
+  npm install --save-dev style-loader css-loader 命令行当前文件下
+  下载好后 去 webpack.config.js 文件中module下 添加      {test: /\.css/,use: ['style','css-loader']}
+  import './main.css'; 放到用的js中
+
+  打包本地图
+  下载  npm i -D file-loader  命令行当前文件下
+  下载好后 去 webpack.config.js 文件中module下 添加   {test: /\.(jpe?g|png)$/,loader: 'file-loader'}
+  在src 下创建img文件，图片放倒里面，
+  在webpack.config.js 文件中 module.exports 下 添加  pubilcpath: 'build/'
+
+  这样打包好以后就可以在用图片的js中  import img from './images/baidu.jpg';    <img src = {img} style={style} />
 
 
 

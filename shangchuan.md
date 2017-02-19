@@ -104,6 +104,8 @@ github  上传添加时 git push -u origin master之后在上传改动直接git 
 
 首先，.md 文件，也就是 markdown 格式的支持，就是 Jekyll 提供给我们的。这个前面已经详细介绍过了。
 
+##### page.title
+
 现在，我们来添加布局文件
 
 英文参考文档：[官网](https://jekyllrb.com/docs/frontmatter/)
