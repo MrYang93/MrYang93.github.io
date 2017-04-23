@@ -23,7 +23,6 @@ title: JS 独孤求败
 <div class="divider">
   <a href="#http">http</a>
   <a href="#session">session</a>
-  <a href="#haoqi">haoqi</a>
 
 
 </div>
