@@ -7,13 +7,13 @@ title: JS 独孤求败
   <div class='wrapper-inside clearfix'>
     <div class='top-large'>
       <div class='book-title'>
-        JS 独孤求败
+        Mr Yang
       </div>
       <div class='book-author'>
-        <a href="https://github.com/happypeter">happypeter</a>
+        <a href="https://github.com/mryang93">杨丙林</a>
       </div>
       <p class='book-description'>
-        《 JS 独孤求败》是一本把你从零基础学员变成一个编程高手的厚厚的书。
+        生存是本能,学习是能力,敲代码也可以很有乐趣。
       </p>
       <a href="#toc" class="read-btn">开始阅读</a>
     </div>
@@ -29,13 +29,13 @@ title: JS 独孤求败
 </div>
 <div class="reviewers">
   <div class="name-card">
-    <img src="https://avatars1.githubusercontent.com/u/72467?v=3&s=460">
+    <img src="images/card.jpg">
     <div class="text">
       <div class="name">
-       happypeter
+       杨丙林
       </div>
-      <div class="job-title"><a href="http://haoduoshipin.com">本书作者，好多视频网作者</a></div>
-      A GREAT ARTIST ALWAYS HIDES THEMSELVES IN THEIR WORK
+      <div class="job-title"><a href="http://haoduoshipin.com">世界很大我很渺小,我们用代码创造世界</a></div>
+      The weak man is because he does not understand himself
     </div>
   </div>
 </div>
