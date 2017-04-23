@@ -34,7 +34,7 @@ title: JS 独孤求败
       <div class="name">
        杨丙林
       </div>
-      <div class="job-title"><a href="http://haoduoshipin.com">世界很大我很渺小,我们用代码创造世界</a></div>
+      <div class="job-title"><a href="https://mryang93.github.io/myblog">世界很大我很渺小,我们用代码创造世界</a></div>
       The weak man is because he does not understand himself
     </div>
   </div>
