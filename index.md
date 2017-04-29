@@ -10,10 +10,10 @@ title: JS 独孤求败
         Mr Yang
       </div>
       <div class='book-author'>
-        <a href="https://mryang93.github.io/myblog">杨丙林</a>
+        <a href="https://mryang93.github.io/myblog">杨丙林>></a>
       </div>
       <p class='book-description'>
-        生存是本能,学习是能力,敲代码也可以很有乐趣。
+        无聊的时候敲敲代码,开心的时候敲敲代码,伤心的时候敲敲代码
       </p>
       <a href="#toc" class="read-btn">开始阅读</a>
     </div>
