@@ -10,10 +10,10 @@ title: JS 独孤求败
         Mr Yang
       </div>
       <div class='book-author'>
-        <a href="https://mryang93.github.io/myblog">杨丙林>></a>
+        <a href="https://mryang93.github.io/resume">杨丙林>></a>
       </div>
       <p class='book-description'>
-        无聊的时候敲敲代码,开心的时候敲敲代码,伤心的时候敲敲代码
+        Remembering that you are going to die is the best way I know to avoid the trap of thinking you have something to lose.
       </p>
       <a href="#toc" class="read-btn">开始阅读</a>
     </div>
