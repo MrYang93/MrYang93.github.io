@@ -13,7 +13,7 @@ title: JS 独孤求败
         <a href="https://mryang93.github.io/resume">杨丙林>></a>
       </div>
       <p class='book-description'>
-        Remembering that you are going to die is the best way I know to avoid the trap of thinking you have something to lose.
+        Remembering that you are going to die is the best way I know to avoid the trap of thinking you have something to lose.          --Steve Jobs
       </p>
       <a href="#toc" class="read-btn">开始阅读</a>
     </div>
